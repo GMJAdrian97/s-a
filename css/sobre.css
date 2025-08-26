@@ -1,0 +1,33 @@
+body {
+  background-image: url("/s&a/imgs/s&aSobreAzul.png");
+  background-size: contain;      /* Hace que la imagen no se deforme pero no ocupa toda la pantalla */
+  background-color: #00122e; /* color de fondo detrás de la imagen */
+  background-position: center; /* La centra en cualquier dispositivo */
+  background-repeat: no-repeat;/* Evita que se repita */
+  height: 100vh;               /* Ocupa toda la altura de la pantalla */
+  margin: 0;  
+  display: flex;
+  justify-content: center; /* Centra horizontal */
+  align-items: center;     /* Centra vertical */
+}
+
+/* Botón circular responsivo */
+.btn-circular {
+  width: 20vw;   /* Escala según el ancho de la pantalla */
+  height: 20vw;  /* Igual que el ancho → círculo perfecto */
+  max-width: 120px;  /* Límite para pantallas grandes */
+  max-height: 120px;
+  min-width: 60px;   /* Límite para pantallas chicas */
+  min-height: 60px;
+
+  border-radius: 50%; /* Hace el círculo */
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s;
+}
