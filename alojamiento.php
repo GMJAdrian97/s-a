@@ -50,9 +50,21 @@
             <a href="https://share.google/BAfw6tasv7k7OOhnP" target="_blank">
                 <button class="btn btn--block card__btn">Mas Informacion</button>
             </a>
+            <div id="IdModalA" class="modal">
+                <img src="/s&a/imgs/IconHospedaje.png" class="img-icons" alt="">
+                <p><strong>Hotel Posada Virrey de Mendoza</strong> <br /><Br />(Recomendacion) <br />Ubicado en pleno corazón de Acámbaro y
+                    muy
+                    cerca del templo donde se celebrará nuestra boda, este hotel es una opción ideal para disfrutar de
+                    la fiesta sin prisas. Rodeado de comercios y espacios para pasear, ofrece estacionamiento y
+                    restaurante, asegurando comodidad durante su estancia.</p><br />
+                <p> Con Cariño S&A. </p>
+                <a href="#" rel="modal:close"></a>
+            </div>
+            <a class="link-interrogacion" href="#IdModalA" rel="modal:open"><img class="img-interrogacion"
+                    src="/s&a/imgs/interrogacion.png" /></a>
         </div>
 
-        <!-- Alojamiento A -->
+        <!-- Alojamiento B-->
         <div class="section section-ceremonia">
             <!-- Card Ceremonia -->
             <div class="card card-ceremonia" id="Ceremonia">
@@ -62,6 +74,18 @@
                 <a href="https://share.google/YORXkhFwhanEcTQsF" target="_blank">
                     <button class="btn btn--block card__btn">Mas Informacion</button>
                 </a>
+                <div id="IdModalB" class="modal">
+                    <img src="/s&a/imgs/IconHospedaje.png" class="img-icons" alt="">
+                    <p><strong>Hotel Meson del puente</strong><br /><br />
+                        Este hotel, aunque está un poco más alejado del centro y del templo, ofrece una experiencia más
+                        completa y confortable. Cuenta con restaurante, bar, piscina, cancha de pádel y un amplio
+                        estacionamiento, lo que lo convierte en una opción ideal para relajarse y disfrutar al máximo
+                        antes y después de la boda.</p><br />
+                    <p> Con Cariño S&A. </p>
+                    <a href="#" rel="modal:close"></a>
+                </div>
+                <a class="link-interrogacion" href="#IdModalB" rel="modal:open"><img class="img-interrogacion"
+                        src="/s&a/imgs/interrogacion.png" /></a>
             </div>
 
             <!-- Alojamiento c-->
@@ -74,6 +98,18 @@
                     <a href="https://share.google/JDnmPJuTZvSHeYtNe" target="_blank">
                         <button class="btn btn--block card__btn">Mas Informacion</button>
                     </a>
+                    <div id="IdModalC" class="modal">
+                        <img src="/s&a/imgs/IconHospedaje.png" class="img-icons" alt="">
+                        <p><strong>Kali Doña Tere Hotel Boutique</strong><br /><br />
+                        <p>Este hotel también se encuentra en una zona céntrica de Acámbaro, no tan lejos del templo
+                            donde se celebrará nuestra boda. Aunque su ubicación no es tan vistosa como la primera
+                            opción, ofrece la misma comodidad y servicios: restaurante, estacionamiento y cercanía a
+                            comercios para disfrutar su estancia con tranquilidad.</p><br />
+                        <p> Con Cariño S&A. </p>
+                        <a href="#" rel="modal:close"></a>
+                    </div>
+                    <a class="link-interrogacion" href="#IdModalC" rel="modal:open"><img class="img-interrogacion"
+                            src="/s&a/imgs/interrogacion.png" /></a>
                 </div>
             </div>
             <div class="card card-ceremonia" id="btnAlo">

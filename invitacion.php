@@ -104,7 +104,7 @@
             <a href="https://maps.app.goo.gl/pRwgbNgvUrDiNzZ37" target="_blank">
                 <button class="btn btn--block card__btn">Ubicacion</button>
             </a>
-            <div id="IdModal" class="modal">
+            <div id="IdModalRecepcion" class="modal">
                 <img src="/s&a/imgs/iconRecepcion.png" class="img-icons" alt="">
                 <p>Nos llena de ilusión recibirlos en la Recepción, que se llevará a cabo en el Rancho Martínez.
                     Para su comodidad, el acceso será únicamente a partir de las 3:00 p.m., momento en que con gusto los
@@ -114,7 +114,7 @@
                 <p> Con Cariño S&A. </p>
                 <a href="#" rel="modal:close"></a>
             </div>
-            <a class="link-interrogacion" href="#IdModal" rel="modal:open"><img class="img-interrogacion"
+            <a class="link-interrogacion" href="#IdModalRecepcion" rel="modal:open"><img class="img-interrogacion"
                     src="/s&a/imgs/interrogacion.png" /></a>
         </div>
     </div>
@@ -144,8 +144,7 @@
 
                         <!-- Item 1 -->
                         <li>
-                            <h3>Ceremonia</h3>
-                            <p>
+                            <p> <strong>Ceremonia</strong> <br />
                                 De: 1:00pm. a 2:00pm.
                             </p><br /><br />
                             <!-- Icono -->
@@ -156,9 +155,10 @@
 
                         <!--  Item 2 /s&a-->
                         <li>
-                            <h3>Recepcion</h3>
-                            <p>
-                                De 3:00pm. a 3:30pm.
+                            <p><strong>Recepcion</strong> <br />
+                                En Rancho Martinez <br /> De 3:00pm. a 3:30pm. <br />
+                                <a class="link-interrogacion" href="#IdModalRecepcion" rel="modal:open"><img
+                                        class="img-interrogacion" src="/s&a/imgs/interrogacion.png" /></a>
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
@@ -169,19 +169,29 @@
 
                         <!--  Item 3 -->
                         <li>
-                            <h3>Comida</h3>
-                            <p>
-                                De 3:30pm. a 5:30pm
+                            <p> <strong>Comida</strong> <br />
+                                De 3:30pm. a 5:30pm <br /> <a class="link-interrogacion" href="#IdModalComida"
+                                    rel="modal:open"><img class="img-interrogacion"
+                                        src="/s&a/imgs/interrogacion.png" /></a>
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
                                 <img src="/s&a/imgs/ComidaIcon.png" class="img-icons" alt="">
                             </div>
+                            <div id="IdModalComida" class="modal">
+                                <img src="/s&a/imgs/IconComida.png" class="img-icons" alt="">
+                                <p>Es importante llegar a la recepción a las 3:00 p.m., o a más tardar 3:30 p.m., ya que
+                                    en ese momento dará inicio la comida. El servicio estará disponible únicamente
+                                    durante dos horas, finalizando a las 5:30 p.m. Queremos que todos nuestros invitados
+                                    disfruten de este momento tan especial y que nadie se quede sin compartir el
+                                    banquete con nosotros."</p><br />
+                                <p> Con Cariño S&A. </p>
+                                <a href="#" rel="modal:close"></a>
+                            </div>
                         </li>
                         <!--  Item 4 -->
                         <li>
-                            <h3>Protocolo</h3>
-                            <p>
+                            <p> <strong>Protocolo</strong> <br />
                                 De 6:00pm. a 7:00pm
                             </p><br /><br />
                             <!-- Icono -->
@@ -191,8 +201,7 @@
                         </li>
                         <!--  Item 5 -->
                         <li>
-                            <h3>¡A disfrutar!</h3>
-                            <p>
+                            <p> <strong>¡A disfrutar!</strong> <br />
                                 De 7:30pm
                             </p><br /><br />
                             <!-- Icono -->
@@ -201,10 +210,10 @@
                             </div>
                         </li>
                         <li>
-                            <h3>¡Que? Que...?!</h3>
-                            <p>
-                                La fiesta de acaba... </p>
-                            <p> Hasta que el cuerpo aguante.</p><br />
+                            <p> <strong>¡Que? Que...?!</strong><br />
+                                La fiesta de acaba...
+                                <br /> Hasta que el cuerpo aguante.
+                            </p>
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
@@ -232,7 +241,8 @@
             <p>Queremos que disfrutes de nuestra boda sin preocupaciones, nos encantaría que
                 te quedaras disfrutar de la fiesta e principio a fin, por eso te compartimos algunas opciones de
                 alojamiento cercanas.</p>
-            <a href="/s&a/alojamiento.php"> <!-- target="_blank" -->
+            <a href="/s&a/alojamiento.php">
+                <!-- target="_blank" -->
                 <button class="btn btn--block card__btn">Alojamiento</button>
             </a>
         </div>
