@@ -20,7 +20,7 @@ img, video {
 }
 
 .img-icons{
-  width: 70%;
+  width: 80%;
   height: auto;
   margin: auto
 }
@@ -32,6 +32,10 @@ img, video {
 
 .link-interrogacion{
   margin-top: 500px;
+}
+
+.a{
+  text-decoration: none;
 }
 
 
@@ -302,3 +306,142 @@ img, video {
   width: 13%;
 }
 
+
+/* ============================================= CSS Intinerario ============================================= */
+
+/* ================= Timeline S&A (AISLADO, sin tocar tu CSS) ================ */
+.sa-timeline{
+  /* paleta local (no afecta fuera del wrapper) */
+  --bg: transparent;
+  --navy:#173a5b;   /* azul S&A */
+  --gold:#d4af37;   /* dorado S&A */
+  --muted:#c5c3cb;  /* gris base */
+  position: relative;
+  padding: 16px 0;
+}
+
+/* Lista principal (mantén tus clases/id originales) */
+.sa-timeline .vertical-scrollable-timeline{
+  width: min(600px, 92vw);
+  list-style: none;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Barra de progreso */
+.sa-timeline .list-progress{
+  width: 8px;
+  height: 100%;
+  background-color: #173a5b;    /* tramo “recorrido” visible */
+  position: absolute;
+  left: 48px;                       /* alineada con los íconos */
+  top: 0;
+  overflow: hidden;
+}
+@media (max-width: 480px){
+  .sa-timeline .list-progress{ left: 36px; }
+}
+
+/* La parte “no recorrida” tapa con color de fondo del card/página */
+.sa-timeline .list-progress .inner{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: rgb(182, 181, 181);
+  width: 100%;
+  transition: height .25s ease;
+}
+
+/* Ítems */
+.sa-timeline .vertical-scrollable-timeline li{
+  --iconSize: 104px;
+  --iconRing: 80px;
+  position: relative;
+  padding-left: 1rem;
+}
+@media (max-width: 480px){
+  .sa-timeline .vertical-scrollable-timeline li{
+    --iconSize: 90px;
+    --iconRing: 66px;
+  }
+}
+
+/* Títulos y textos (no toco tus h1/h2 globales) */
+.sa-timeline .vertical-scrollable-timeline li h2{
+  font-size: clamp(20px, 3.5vw, 25px);
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--navy);
+}
+.sa-timeline .vertical-scrollable-timeline li p{
+  line-height: 1.55;
+  color: #333;
+}
+
+/* Icono circular */
+.sa-timeline .vertical-scrollable-timeline li .icon-holder{
+  position: absolute;
+  left: 0; top: 0;
+  width: var(--iconSize); height: var(--iconSize);
+  display: flex; justify-content: center; align-items: center;
+  background-color: var(--muted);     /* estado base */
+  border-radius: 50%;
+  z-index: 1;
+  transition: .25s transform ease, .25s background-color ease, .25s box-shadow ease;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+}
+.sa-timeline .vertical-scrollable-timeline li .icon-holder::before{
+  content: "";
+  width: var(--iconRing); height: var(--iconRing);
+  border: 4px solid #fff;
+  position: absolute;
+  background-color: var(--muted);
+  border-radius: 50%;
+  z-index: -1;
+  transition: .25s background-color ease, .25s transform ease;
+}
+.sa-timeline .vertical-scrollable-timeline li .icon-holder i{
+  font-size: clamp(18px, 4vw, 25px);
+  color: #fff;
+}
+
+/* Guía vertical detrás de iconos */
+.sa-timeline .vertical-scrollable-timeline li::before{
+  content:"";
+  position: absolute;
+  height: 100%;
+  width: 8px;
+  background-color: transparent;
+  left: 48px;
+  z-index: 0;
+}
+@media (max-width: 480px){
+  .sa-timeline .vertical-scrollable-timeline li::before{ left: 36px; }
+}
+
+/* Último item: base para “cortar” la guía con el fondo */
+.sa-timeline .vertical-scrollable-timeline li:last-child::before{
+  width: 58px;
+  left: 48px;
+  background-color: var(--bg);
+}
+@media (max-width: 480px){
+  .sa-timeline .vertical-scrollable-timeline li:last-child::before{ left: 36px; }
+}
+
+/* Estado activo (cuando el <li> se destaca) */
+.sa-timeline .vertical-scrollable-timeline li.active .icon-holder{
+  background: #173a5b;
+  box-shadow: 0 8px 22px rgba(212,175,55,.25);
+  transform: translateY(-2px);
+}
+.sa-timeline .vertical-scrollable-timeline li.active .icon-holder::before{
+  background-color:#173a5b;
+  transform: scale(1.04);
+}
+
+/* Respeta usuarios con “reducir movimiento” */
+@media (prefers-reduced-motion: reduce){
+  .sa-timeline *{ transition:none !important; }
+}
