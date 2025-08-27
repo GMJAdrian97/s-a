@@ -162,7 +162,7 @@
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
-                            <img src="/s&a/imgs/RecepcionIcon.png" class="img-icons" alt="">
+                                <img src="/s&a/imgs/RecepcionIcon.png" class="img-icons" alt="">
                                 <!-- <i class="fa-solid fa-circle-info"></i> -->
                             </div>
                         </li>
@@ -175,7 +175,7 @@
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
-                            <img src="/s&a/imgs/ComidaIcon.png" class="img-icons" alt="">
+                                <img src="/s&a/imgs/ComidaIcon.png" class="img-icons" alt="">
                             </div>
                         </li>
                         <!--  Item 4 -->
@@ -186,28 +186,29 @@
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
-                            <img src="/s&a/imgs/ProtocoloIcon.png" class="img-icons" alt="">
+                                <img src="/s&a/imgs/ProtocoloIcon.png" class="img-icons" alt="">
                             </div>
                         </li>
-                         <!--  Item 5 -->
-                         <li>
+                        <!--  Item 5 -->
+                        <li>
                             <h3>¡A disfrutar!</h3>
                             <p>
                                 De 7:30pm
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
-                            <img src="/s&a/imgs/FiestaIcon.png" class="img-icons" alt="">
+                                <img src="/s&a/imgs/FiestaIcon.png" class="img-icons" alt="">
                             </div>
                         </li>
                         <li>
                             <h3>¡Que? Que...?!</h3>
                             <p>
-                               La fiesta de acaba... </p> <p> Hasta que el cuerpo aguante.</p><br />
+                                La fiesta de acaba... </p>
+                            <p> Hasta que el cuerpo aguante.</p><br />
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
-                            <img src="/s&a/imgs/FinFiestaIcon.png" class="img-icons" alt="">
+                                <img src="/s&a/imgs/FinFiestaIcon.png" class="img-icons" alt="">
                             </div>
                         </li>
 
@@ -221,33 +222,23 @@
     </div>
 
     <!-- Seccion Hospedaje -->
-    <div class="section section-hospedaje">
+    <div class="section section-hospedaje" id="Hoteles">
 
         <!-- Card Recepción -->
         <div class="col-4"><img src="/s&a/imgs/IconHostedaje.png" class="img-icons" alt=""></div>
         <div class="card card-ceremonia" id="Ceremonia">
             <img class="img-cards" src="" alt="">
-            <p><strong>Hora:</strong> 03:00 PM. hrs</p>
-            <p><strong>Lugar:</strong> Rancho Martinez, Acámbaro, Gto</p>
-            <a href="https://maps.app.goo.gl/pRwgbNgvUrDiNzZ37" target="_blank">
-                <button class="btn btn--block card__btn">Ubicacion</button>
+            <p><strong>¡Quedate!:</strong></p>
+            <p>Queremos que disfrutes de nuestra boda sin preocupaciones, nos encantaría que
+                te quedaras disfrutar de la fiesta e principio a fin, por eso te compartimos algunas opciones de
+                alojamiento cercanas.</p>
+            <a href="/s&a/alojamiento.php"> <!-- target="_blank" -->
+                <button class="btn btn--block card__btn">Alojamiento</button>
             </a>
-            <div id="IdModal" class="modal">
-                <img src="/s&a/imgs/iconRecepcion.png" class="img-icons" alt="">
-                <p>Nos llena de ilusión recibirlos en la Recepción, que se llevará a cabo en el Rancho Martínez.
-                    Para su comodidad, el acceso será únicamente a partir de las 3:00 p.m., momento en que con gusto los
-                    atenderemos.</p><br />
-                <p>Se llevará un control de pases de entrada, por lo que será indispensable presentarlos completos al
-                    ingresar.</p><br />
-                <p> Con Cariño S&A. </p>
-                <a href="#" rel="modal:close"></a>
-            </div>
-            <a class="link-interrogacion" href="#IdModal" rel="modal:open"><img class="img-interrogacion"
-                    src="/s&a/imgs/interrogacion.png" /></a>
         </div>
     </div>
 
-    <!-- Card Recepción -->
+    <!-- Seccion Alojamiento -->
     <div class="section section-recepcion">
 
         <!-- Card Recepción -->
