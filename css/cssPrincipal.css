@@ -38,6 +38,15 @@ img, video {
   text-decoration: none;
 }
 
+.img-interrogacionNovios{
+  display: inline;
+  width: 30%;
+}
+
+.link-interrogacionNovios{
+  margin-top: 500px;
+}
+
 #btnAlo{
   border-color: transparent;
 }
@@ -290,6 +299,15 @@ img, video {
   text-align: center;
 }
 
+.card.card-VistaNovios {
+  margin: 5%;
+  color: #173a5b;
+  font-size: 12px;
+  font-weight: 500;
+  /* letter-spacing: 3px; */
+  text-align: center;
+}
+
 /* botones cartas */
 .btn {
   background-color: white;
@@ -308,6 +326,69 @@ img, video {
 .btn--block-interrogacion{
   width: 13%;
 }
+
+/* Hace que el botón no tenga fondo ni borde, solo actúe como contenedor */
+.btn.card__btn.sa-open-modal {
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: contents;
+}
+
+/* Hace que la imagen se vea clickeable */
+.btn.card__btn.sa-open-modal img {
+  display: end;
+  width: 10%;   /* ajusta tamaño a gusto */
+  height: auto;
+  cursor: pointer;
+}
+
+/* Hace que el botón no tenga fondo ni borde, solo actúe como contenedor */
+.Noviosbtn.card__btn.sa-open-modal {
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: contents;
+}
+/* Hace que la imagen se vea clickeable */
+.Noviosbtn.card__btn.sa-open-modal.novios img {
+  display: end;
+  width: 30%;
+  height: auto;
+  cursor: pointer;
+}
+
+.submit {
+  text-align: center; /* corregí el "text-aling" */
+  margin-top: 20px;
+}
+
+#form_button {
+  background: linear-gradient(135deg, #173a5b, #1e4d77); /* azul degradado */
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 50px; /* 🔵 súper redondeado */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  font-family: "Libre Baskerville", serif;
+}
+
+#form_button:hover {
+  background: linear-gradient(135deg, #d4af37, #b98c22); /* ✨ dorado */
+  color: #fff; /* texto azul */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+#form_button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
 
 
 /* ============================================= CSS Intinerario ============================================= */
@@ -447,4 +528,121 @@ img, video {
 /* Respeta usuarios con “reducir movimiento” */
 @media (prefers-reduced-motion: reduce){
   .sa-timeline *{ transition:none !important; }
+}
+
+
+/* Elimina el scrol horizontal */
+html, body {
+  width: 100%;
+  overflow-x: clip;   /* oculta desbordes horizontales sin scrollbar */
+}
+
+
+/* --- Modal Overlay --- */
+/* Overlay oculto hasta que se abre */
+.sa-modal-overlay {
+  display: none; /* 🔴 importante */
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+/* --- Caja Modal --- */
+.sa-modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 70%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  position: relative;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+}
+
+/* Botón de cierre */
+.sa-close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #173a5b;
+}
+
+/* -------------------- Formulario invitados -------------------- */
+.login-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+.login-box .user-box label.codigofamilia {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;;
 }

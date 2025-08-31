@@ -8,54 +8,28 @@
     <link rel="stylesheet" href="/s&a/css/cssPrincipal.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap"
         rel="stylesheet">
-    <!-- jQuery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <!-- jQuery Modal CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" rel="stylesheet" />
 
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="index.html" class="navbar-logo">Nuestra Boda S&A</a>
-            <button class="navbar-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul class="navbar-menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Recepcion</a></li>
-                <li><a href="#Ceremonia">Ceremonia</a></li>
-                <li><a href="#">Intinerario</a></li>
-                <li><a href="#">Confirmacion de asistencia</a></li>
-                <li><a href="#">Alojamiento</a></li>
-                <li><a href="#">Galeria</a></li>
-            </ul>
+
+    <!-- Modal único -->
+    <div id="sa-modal" class="sa-modal-overlay">
+        <div class="sa-modal">
+            <span class="sa-close">&times;</span>
+            <img id="sa-modal-img" src="" alt="" style="display:none;">
+            <p id="sa-modal-texto">Aquí irá el texto dinámico</p>
         </div>
-    </nav>
+    </div>
 
     <div class="section section-presentacion">
         <img src="/s&a/imgs/img-bienvenidaTransparente.png" alt="">
     </div>
 
     <!-- --------------------------- Reloj de cuenta regresiva --------------------------- -->
-    <!-- <div class="section section-countdown">
-        <div class="time">Faltan</div>
-        <div class="line"></div>
-        <div class="time" id="countdown">00:00:00</div>
-        <div class="labels">
-            <span>Días </span>
-            <span>Horas</span>
-            <span>Minutos</span>
-            <span>Segundos</span>
-        </div>
-        <div class="line"></div>
-    </div> -->
-
     <div class="card card-reloj">
         <div class="section section-countdown">
             <div class="time">Faltan</div>
@@ -92,30 +66,26 @@
         </div>
     </div>
 
-    <!-- Card Recepción -->
-    <div class="section section-recepcion">
+    <!-- seccion Recepción -->
+    <div class="section section-recepcion" id="Recepcion">
 
         <!-- Card Recepción -->
         <div class="col-4"><img src="/s&a/imgs/iconRecepcion.png" class="img-icons" alt=""></div>
-        <div class="card card-ceremonia" id="Ceremonia">
+        <div class="card card-ceremonia">
             <img class="img-cards" src="/s&a/imgs/imgRancho1.png" alt="">
             <p><strong>Hora:</strong> 03:00 PM. hrs</p>
             <p><strong>Lugar:</strong> Rancho Martinez, Acámbaro, Gto</p>
             <a href="https://maps.app.goo.gl/pRwgbNgvUrDiNzZ37" target="_blank">
                 <button class="btn btn--block card__btn">Ubicacion</button>
             </a>
-            <div id="IdModalRecepcion" class="modal">
-                <img src="/s&a/imgs/iconRecepcion.png" class="img-icons" alt="">
-                <p>Nos llena de ilusión recibirlos en la Recepción, que se llevará a cabo en el Rancho Martínez.
-                    Para su comodidad, el acceso será únicamente a partir de las 3:00 p.m., momento en que con gusto los
-                    atenderemos.</p><br />
-                <p>Se llevará un control de pases de entrada, por lo que será indispensable presentarlos completos al
-                    ingresar.</p><br />
-                <p> Con Cariño S&A. </p>
-                <a href="#" rel="modal:close"></a>
-            </div>
-            <a class="link-interrogacion" href="#IdModalRecepcion" rel="modal:open"><img class="img-interrogacion"
-                    src="/s&a/imgs/interrogacion.png" /></a>
+            <!-- Boton que disparan el modal -->
+            <button class="btn btn--block card__btn sa-open-modal" data-texto="<p>Nos llena de ilusión recibirlos en la Recepción, que se llevará a cabo en el Rancho Martínez.
+                        Para su comodidad, el acceso será únicamente a partir de las 3:00 p.m., momento en que con gusto los
+                        atenderemos.</p><br />
+                    <p>Se llevará un control de pases de entrada, por lo que será indispensable presentarlos completos al
+                        ingresar.</p><br />
+                    <p> Con Cariño S&A. </p>" data-imagen="/s&a/imgs/iconRecepcion.png"><img class="img-interrogacion"
+                    src="/s&a/imgs/interrogacion.png" /></button>
         </div>
     </div>
 
@@ -157,8 +127,14 @@
                         <li>
                             <p><strong>Recepcion</strong> <br />
                                 En Rancho Martinez <br /> De 3:00pm. a 3:30pm. <br />
-                                <a class="link-interrogacion" href="#IdModalRecepcion" rel="modal:open"><img
-                                        class="img-interrogacion" src="/s&a/imgs/interrogacion.png" /></a>
+                                <!-- Boton que disparan el modal -->
+                                <button class="btn btn--block card__btn sa-open-modal" data-texto="<p>Nos llena de ilusión recibirlos en la Recepción, que se llevará a cabo en el Rancho Martínez.
+                        Para su comodidad, el acceso será únicamente a partir de las 3:00 p.m., momento en que con gusto los
+                        atenderemos.</p><br />
+                    <p>Se llevará un control de pases de entrada, por lo que será indispensable presentarlos completos al
+                        ingresar.</p><br />
+                    <p> Con Cariño S&A. </p>" data-imagen="/s&a/imgs/iconRecepcion.png"><img class="img-interrogacion"
+                                        src="/s&a/imgs/interrogacion.png" /></button>
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
@@ -170,23 +146,18 @@
                         <!--  Item 3 -->
                         <li>
                             <p> <strong>Comida</strong> <br />
-                                De 3:30pm. a 5:30pm <br /> <a class="link-interrogacion" href="#IdModalComida"
-                                    rel="modal:open"><img class="img-interrogacion"
-                                        src="/s&a/imgs/interrogacion.png" /></a>
+                                De 3:30pm. a 5:30pm <br /> <button class="btn btn--block card__btn sa-open-modal"
+                                    data-texto="<p>Es importante llegar a la recepción a las 3:00 p.m., o a más tardar 3:30 p.m., ya que
+                                    en ese momento dará inicio la comida. El servicio estará disponible únicamente
+                                    durante dos horas, finalizando a las 5:30 p.m. Queremos que todos nuestros invitados
+                                    disfruten de este momento tan especial y que nadie se quede sin compartir el
+                                    banquete con nosotros.</p><br />
+                                <p> Con Cariño S&A. </p>" data-imagen="/s&a/imgs/IconComida.png"><img
+                                        class="img-interrogacion" src="/s&a/imgs/interrogacion.png" /></button>
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
                                 <img src="/s&a/imgs/ComidaIcon.png" class="img-icons" alt="">
-                            </div>
-                            <div id="IdModalComida" class="modal">
-                                <img src="/s&a/imgs/IconComida.png" class="img-icons" alt="">
-                                <p>Es importante llegar a la recepción a las 3:00 p.m., o a más tardar 3:30 p.m., ya que
-                                    en ese momento dará inicio la comida. El servicio estará disponible únicamente
-                                    durante dos horas, finalizando a las 5:30 p.m. Queremos que todos nuestros invitados
-                                    disfruten de este momento tan especial y que nadie se quede sin compartir el
-                                    banquete con nosotros."</p><br />
-                                <p> Con Cariño S&A. </p>
-                                <a href="#" rel="modal:close"></a>
                             </div>
                         </li>
                         <!--  Item 4 -->
@@ -248,39 +219,28 @@
         </div>
     </div>
 
-    <!-- Seccion Alojamiento -->
-    <div class="section section-recepcion">
+    <!-- Seccion Asitencia -->
+    <div class="section section-asistencia" id="asistencia">
 
         <!-- Card Recepción -->
-        <div class="col-4"><img src="/s&a/imgs/iconRecepcion.png" class="img-icons" alt=""></div>
-        <div class="card card-ceremonia" id="Ceremonia">
-            <img class="img-cards" src="/s&a/imgs/imgRancho1.png" alt="">
-            <p><strong>Hora:</strong> 03:00 PM. hrs</p>
-            <p><strong>Lugar:</strong> Rancho Martinez, Acámbaro, Gto</p>
-            <a href="https://maps.app.goo.gl/pRwgbNgvUrDiNzZ37" target="_blank">
-                <button class="btn btn--block card__btn">Ubicacion</button>
+        <div class="col-4"><img src="/s&a/imgs/IconAsistencia.png" class="img-icons" alt=""></div>
+        <div class="card card-ceremonia" id="asistencia">
+            <img class="img-cards" src="" alt="">
+            <p><strong>¡Quedate!:</strong></p>
+            <p>Queremos que disfrutes de nuestra boda sin preocupaciones, nos encantaría que
+                te quedaras disfrutar de la fiesta e principio a fin, por eso te compartimos algunas opciones de
+                alojamiento cercanas.</p>
+            <a href="/s&a/alojamiento.php">
+                <!-- target="_blank" -->
+                <button class="btn btn--block card__btn">Alojamiento</button>
             </a>
-            <div id="IdModal" class="modal">
-                <img src="/s&a/imgs/iconRecepcion.png" class="img-icons" alt="">
-                <p>Nos llena de ilusión recibirlos en la Recepción, que se llevará a cabo en el Rancho Martínez.
-                    Para su comodidad, el acceso será únicamente a partir de las 3:00 p.m., momento en que con gusto los
-                    atenderemos.</p><br />
-                <p>Se llevará un control de pases de entrada, por lo que será indispensable presentarlos completos al
-                    ingresar.</p><br />
-                <p> Con Cariño S&A. </p>
-                <a href="#" rel="modal:close"></a>
-            </div>
-            <a class="link-interrogacion" href="#IdModal" rel="modal:open"><img class="img-interrogacion"
-                    src="/s&a/imgs/interrogacion.png" /></a>
         </div>
     </div>
 
-
-    <script src="/s&a/js/nav.js">
-    < script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity = "sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin = "anonymous" >
-    </script>
+    <script src="/s&a/js/relojRegresivo.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script> -->
     <script>
     (function() {
         var $win = $(window);
@@ -335,6 +295,47 @@
         $win.on("load resize scroll", onScrollOrResize);
         update(); // primer cálculo
     })();
+    </script>
+
+    <!-- Script para los mensajes modales -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const modal = document.getElementById("sa-modal");
+        const modalTexto = document.getElementById("sa-modal-texto");
+        const modalImg = document.getElementById("sa-modal-img");
+        const btnCerrar = modal.querySelector(".sa-close");
+        const botonesAbrir = document.querySelectorAll(".sa-open-modal");
+
+        botonesAbrir.forEach(boton => {
+            boton.addEventListener("click", () => {
+                const texto = boton.getAttribute("data-texto");
+                const imagen = boton.getAttribute("data-imagen");
+
+                // 👉 Ahora sí interpreta <p>, <br>, <strong>, etc.
+                modalTexto.innerHTML = texto;
+
+                if (imagen) {
+                    modalImg.src = imagen;
+                    modalImg.style.display = "block";
+                } else {
+                    modalImg.style.display = "none";
+                    modalImg.removeAttribute("src");
+                }
+
+                modal.style.display = "flex";
+            });
+        });
+
+        btnCerrar.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+
+        modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    });
     </script>
 
 </body>
