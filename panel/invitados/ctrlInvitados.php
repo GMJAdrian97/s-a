@@ -10,6 +10,15 @@
     }
 
     switch($accion){
+        case 'BuscarInvitacion':
+            $codigo = $_POST['codigo'];
+            $datosInvitadosReadOne = $invitados->readOne($codigo);
+            if(isset($datosInvitadosReadOne)){
+                require_once('vistaInvitados.php');
+                } else {
+                echo 'nada';
+            }
+             break;
         
          //////////////////////////////////////// Caso read One ////////////////////////////////////////
      case 'readOne':

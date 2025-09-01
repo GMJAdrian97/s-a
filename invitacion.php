@@ -226,117 +226,133 @@
         <div class="col-4"><img src="/s&a/imgs/IconAsistencia.png" class="img-icons" alt=""></div>
         <div class="card card-ceremonia" id="asistencia">
             <img class="img-cards" src="" alt="">
-            <p><strong>¡Quedate!:</strong></p>
-            <p>Queremos que disfrutes de nuestra boda sin preocupaciones, nos encantaría que
-                te quedaras disfrutar de la fiesta e principio a fin, por eso te compartimos algunas opciones de
-                alojamiento cercanas.</p>
-            <a href="/s&a/alojamiento.php">
-                <!-- target="_blank" -->
-                <button class="btn btn--block card__btn">Alojamiento</button>
-            </a>
-        </div>
-    </div>
+            <p><strong>Confirma tu asistencia:</strong></p>
+            <p>Hemos apartado un lugar especial para ti en nuestra boda.
+                Nos encantaría contar con tu presencia, por favor confírmanos si podrás acompañarnos.
+                Tu respuesta es muy importante para nosotros.<br /><br />
 
-    <script src="/s&a/js/relojRegresivo.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                Con cariño,<br />
+                Samira & Adrian.</p>
+            <!-- Nombre familia: SOLO letras -->
+
+
+
+            <div class="section section-ceremonia">
+                <!-- Card  -->
+                <form method="POST" action="/s&a/panel/invitados/ctrlInvitados.php?accion=BuscarInvitacion">
+                    <div class="user-box">
+                        <input class="LabelCodigoInvitacion" type="text" id="codigo" name="codigo" value="" required><br /><br />
+                        <label>Introduce tu Codigo de invitacion</label>
+                    </div><br />
+                    <div class="submit" style="text-align: center;">
+                        <input type="submit" value="Buscar Invitacion" id="form_button" />
+                    </div><br /><br />
+                </form>
+
+
+            </div>
+        </div><br /><br />
+
+        <script src="/s&a/js/relojRegresivo.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script> -->
-    <script>
-    (function() {
-        var $win = $(window);
-        var $containers = $(".sa-timeline"); // 👈 sólo dentro del wrapper
+        <script>
+        (function() {
+            var $win = $(window);
+            var $containers = $(".sa-timeline"); // 👈 sólo dentro del wrapper
 
-        function update() {
-            var docTop = $win.scrollTop();
-            var winH = $win.height();
-            var docBottom = docTop + winH;
+            function update() {
+                var docTop = $win.scrollTop();
+                var winH = $win.height();
+                var docBottom = docTop + winH;
 
-            $containers.each(function() {
-                var $wrap = $(this);
-                var $timeline = $wrap.find(".vertical-scrollable-timeline");
-                var $items = $timeline.find("li");
+                $containers.each(function() {
+                    var $wrap = $(this);
+                    var $timeline = $wrap.find(".vertical-scrollable-timeline");
+                    var $items = $timeline.find("li");
 
-                // Activa/desactiva items según visibilidad
-                $items.each(function() {
-                    var $el = $(this);
-                    var top = $el.offset().top;
-                    var bottom = top + winH * 0.5;
+                    // Activa/desactiva items según visibilidad
+                    $items.each(function() {
+                        var $el = $(this);
+                        var top = $el.offset().top;
+                        var bottom = top + winH * 0.5;
 
-                    if (bottom <= docBottom && top >= docTop) {
-                        $el.addClass("active");
-                    } else if (!(bottom <= docBottom)) {
-                        $el.removeClass("active");
+                        if (bottom <= docBottom && top >= docTop) {
+                            $el.addClass("active");
+                        } else if (!(bottom <= docBottom)) {
+                            $el.removeClass("active");
+                        }
+                    });
+
+                    // Progreso de la barra .inner (clamp para evitar overflow)
+                    var cont = $timeline[0];
+                    if (cont) {
+                        var rect = cont.getBoundingClientRect();
+                        var h = rect.bottom - window.innerHeight * 0.5;
+                        h = Math.max(0, Math.min(h, rect.height));
+                        $timeline.find(".list-progress .inner").css("height", h + "px");
                     }
                 });
+            }
 
-                // Progreso de la barra .inner (clamp para evitar overflow)
-                var cont = $timeline[0];
-                if (cont) {
-                    var rect = cont.getBoundingClientRect();
-                    var h = rect.bottom - window.innerHeight * 0.5;
-                    h = Math.max(0, Math.min(h, rect.height));
-                    $timeline.find(".list-progress .inner").css("height", h + "px");
+            var ticking = false;
+
+            function onScrollOrResize() {
+                if (!ticking) {
+                    ticking = true;
+                    window.requestAnimationFrame(function() {
+                        update();
+                        ticking = false;
+                    });
                 }
-            });
-        }
+            }
 
-        var ticking = false;
+            $win.on("load resize scroll", onScrollOrResize);
+            update(); // primer cálculo
+        })();
+        </script>
 
-        function onScrollOrResize() {
-            if (!ticking) {
-                ticking = true;
-                window.requestAnimationFrame(function() {
-                    update();
-                    ticking = false;
+        <!-- Script para los mensajes modales -->
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const modal = document.getElementById("sa-modal");
+            const modalTexto = document.getElementById("sa-modal-texto");
+            const modalImg = document.getElementById("sa-modal-img");
+            const btnCerrar = modal.querySelector(".sa-close");
+            const botonesAbrir = document.querySelectorAll(".sa-open-modal");
+
+            botonesAbrir.forEach(boton => {
+                boton.addEventListener("click", () => {
+                    const texto = boton.getAttribute("data-texto");
+                    const imagen = boton.getAttribute("data-imagen");
+
+                    // 👉 Ahora sí interpreta <p>, <br>, <strong>, etc.
+                    modalTexto.innerHTML = texto;
+
+                    if (imagen) {
+                        modalImg.src = imagen;
+                        modalImg.style.display = "block";
+                    } else {
+                        modalImg.style.display = "none";
+                        modalImg.removeAttribute("src");
+                    }
+
+                    modal.style.display = "flex";
                 });
-            }
-        }
+            });
 
-        $win.on("load resize scroll", onScrollOrResize);
-        update(); // primer cálculo
-    })();
-    </script>
+            btnCerrar.addEventListener("click", () => {
+                modal.style.display = "none";
+            });
 
-    <!-- Script para los mensajes modales -->
-    <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const modal = document.getElementById("sa-modal");
-        const modalTexto = document.getElementById("sa-modal-texto");
-        const modalImg = document.getElementById("sa-modal-img");
-        const btnCerrar = modal.querySelector(".sa-close");
-        const botonesAbrir = document.querySelectorAll(".sa-open-modal");
-
-        botonesAbrir.forEach(boton => {
-            boton.addEventListener("click", () => {
-                const texto = boton.getAttribute("data-texto");
-                const imagen = boton.getAttribute("data-imagen");
-
-                // 👉 Ahora sí interpreta <p>, <br>, <strong>, etc.
-                modalTexto.innerHTML = texto;
-
-                if (imagen) {
-                    modalImg.src = imagen;
-                    modalImg.style.display = "block";
-                } else {
-                    modalImg.style.display = "none";
-                    modalImg.removeAttribute("src");
+            modal.addEventListener("click", (e) => {
+                if (e.target === modal) {
+                    modal.style.display = "none";
                 }
-
-                modal.style.display = "flex";
             });
         });
-
-        btnCerrar.addEventListener("click", () => {
-            modal.style.display = "none";
-        });
-
-        modal.addEventListener("click", (e) => {
-            if (e.target === modal) {
-                modal.style.display = "none";
-            }
-        });
-    });
-    </script>
+        </script>
 
 </body>
 

@@ -310,13 +310,14 @@ img, video {
 
 /* botones cartas */
 .btn {
-  background-color: white;
+  background-color:#173a5b;
   border: 1px solid gray-light;
-  color: gray-dark;
+  color: #fff;
   padding: 1rem;
  /*  text-transform: lowercase; */
   Border-radius: 25px;
   margin-bottom: 5%;
+  font-size: 1rem;
 }
 
 .btn--block {
@@ -370,7 +371,7 @@ img, video {
   font-weight: bold;
   padding: 12px 40px;
   border: none;
-  border-radius: 50px; /* 🔵 súper redondeado */
+  border-radius: 50px; /* súper redondeado */
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
@@ -387,6 +388,16 @@ img, video {
 #form_button:active {
   transform: translateY(0);
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.LabelCodigoInvitacion{
+    border-radius: 50px; /* súper redondeado */
+    border-color: #173a5b;
+    height: 2rem;
+    width: 13rem;
+    font-size: 1rem;
+    text-align: center;
+    
 }
 
 
