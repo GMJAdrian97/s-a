@@ -10,7 +10,41 @@
     }
 
     switch($accion){
+
+        case 'ConfirmacionInvitado':
+            $codigo = $codigo;
+            $asistencia = $_POST['asistencia'];
+            if($asistencia == "Si"){
+                $resultado=$invitados->updateConfirmacion($asistencia,$codigo);
+                $datosInvitadoConfirmado = $invitados->read();
+            require_once('vistaInvitadosConfirmados.php');
+            }else{
+                print_r("no va ir a la boda");
+                die();
+            }       
+             break;
+
+
         case 'BuscarInvitacion':
+            $codigo = $_POST['codigo'];
+            $datosInvitadosReadOne = $invitados->readOne($codigo);
+            if(isset($datosInvitadosReadOne)){
+                if($datosInvitadosReadOne['asistencia'] == "pendiente"){
+                    require_once('vistaInvitados.php');
+                } else{
+                    if($datosInvitadosReadOne['asistencia'] = "si"){
+                    require_once('vistaInvitadosConfirmados.php');
+                }else {
+                echo 'nada';
+            }
+
+                }
+                } else {
+                echo 'nada';
+            }
+             break;
+
+    /* case 'BuscarInvitacion':
             $codigo = $_POST['codigo'];
             $datosInvitadosReadOne = $invitados->readOne($codigo);
             if(isset($datosInvitadosReadOne)){
@@ -18,7 +52,7 @@
                 } else {
                 echo 'nada';
             }
-             break;
+             break; */
         
          //////////////////////////////////////// Caso read One ////////////////////////////////////////
      case 'readOne':

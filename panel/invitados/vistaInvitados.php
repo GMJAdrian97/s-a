@@ -36,12 +36,46 @@
             <p><strong>Hola <?php echo $datosInvitadosReadOne['nombre_familia']?></strong></p>
             <p>Con mucha ilusión les hemos apartado un lugar especial para ustedes en nuestra boda.
                 Nos encantaría contar con su presencia, por favor confírmanos si podrás acompañarnos.</p>
-                <p>Te consideramos:</p>
-                <h3> <strong>Pases para adultos: </strong> <?php echo $datosInvitadosReadOne['pases']?> </h3>
-                <h3> <strong>Pases para niños: </strong> <?php echo $datosInvitadosReadOne['ninos']?> </h3>
-                <p>Con cariño, Samira & Adrian.</p><br />
-        
+            <p>Te consideramos:</p>
+            <h3> <strong>Pases para adultos: </strong> <?php echo $datosInvitadosReadOne['pases']?> </h3>
+            <h3> <strong>Pases para niños: </strong> <?php echo $datosInvitadosReadOne['ninos']?> </h3>
+            <p>Con cariño, Samira & Adrian.</p><br />
+
+
+            <!-- form -->
+            <div class="section section-ceremonia">
+                <!-- Card  -->
+                <div class="">
+                    <form method="POST" action="ctrlInvitados.php?accion=ConfirmacionInvitado&codigo=<?php echo $datosInvitadosReadOne['codigo']?>">
+
+                        <!-- Asistencia: solo una opción -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="asistencia" value="Si" id="asistenciaSi"
+                                checked>
+                            <label class="form-check-label" for="asistenciaSi">
+                                Sí podremos asistir
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="asistencia" value="No" id="asistenciaNo">
+                            <label class="form-check-label" for="asistenciaNo">
+                                No podremos asistir
+                            </label>
+                        </div>
+
+                        <div class="submit" style="text-align: center;">
+                            <input type="submit" value="Guardar" id="form_button" />
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+
         </div><br /><br />
+
+
 
         <script src="/s&a/js/relojRegresivo.js"></script>
         <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

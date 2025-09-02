@@ -657,3 +657,73 @@ html, body {
   color: #03e9f4;
   font-size: 12px;;
 }
+
+/* Botones whats apps */
+.btn-whatsapp {
+  background-color: #25d366; /* Verde WhatsApp */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Botones whats apps */
+.btn-MercadoLobre {
+  background-color: #ffe600; /* Verde WhatsApp */
+  color: #173a5b;
+  border: none;
+  padding: 12px 20px;
+  margin: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Botones face  */
+.btn-Face{
+  background-color: #3b5998; /* Verde WhatsApp */
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  margin: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+img.imglogosbandas{
+  margin: auto;
+  border-radius: 50px;
+  width: 7rem;
+  height: 7rem;
+}

@@ -123,6 +123,18 @@
             return  $stmt->rowCount();
         }
 
+        public function updateConfirmacion($asistencia, $codigo){
+            $this->conexion();
+            $sql = "UPDATE invitados set 
+                            asistencia = :asistencia 
+                    WHERE codigo = :codigo";
+            $stmt = $this->con->prepare($sql);
+            $stmt -> bindParam(':asistencia', $asistencia, PDO::PARAM_STR);
+            $stmt -> bindParam(':codigo', $codigo, PDO::PARAM_STR);
+            $rs = $stmt->execute();
+            return  $stmt->rowCount();
+        }
+
         //////////////////////////////////////// Metodo Delete ////////////////////////////////////////
         public function delete($codigo){
             $this->conexion();
