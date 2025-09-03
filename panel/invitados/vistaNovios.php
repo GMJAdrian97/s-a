@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>S&A</title>
-    <link rel="stylesheet" href="/s&a/css/cssPrincipal.css">
-    <link rel="stylesheet" href="/s&a/css/datatables.css" />
+    <link rel="stylesheet" href="/sya/css/cssPrincipal.css">
+    <link rel="stylesheet" href="/sya/css/datatables.css" />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap"
         rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="/s&a/js/datatables.js"></script>
+    <script src="/sya/js/datatables.js"></script>
 
 </head>
 
@@ -60,15 +60,15 @@
                                         <strong>Niños: </strong><?php echo $datosInvitado['ninos'] ?>
                                         <br /><Br />
                                         <strong>Asistira: </strong><?php echo $datosInvitado['asistencia'] ?>
-                                        <br /><Br />" data-imagen="/s&a/imgs/IconAsistencia.png"><img
-                                        class="img-interrogacionNovios" src="/s&a/imgs/inf.png" /></button>
+                                        <br /><Br />" data-imagen="/sya/imgs/IconAsistencia.png"><img
+                                        class="img-interrogacionNovios" src="/sya/imgs/inf.png" /></button>
 
                                 <a
                                     href="ctrlInvitados.php?accion=modify&codigo=<?php echo $datosInvitado['codigo']; ?>"><img
-                                        class="img-interrogacionNovios" src="/s&a/imgs/edicion.png" /></a>
+                                        class="img-interrogacionNovios" src="/sya/imgs/edicion.png" /></a>
                                 <a
                                     href="ctrlInvitados.php?accion=borrar&codigo=<?php echo $datosInvitado['codigo']; ?>"><img
-                                        class="img-interrogacionNovios" src="/s&a/imgs/eliminar.png" /></a>
+                                        class="img-interrogacionNovios" src="/sya/imgs/eliminar.png" /></a>
                             </div>
                         </td>
                     </tr>

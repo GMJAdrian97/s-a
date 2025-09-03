@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>S&A</title>
-    <link rel="stylesheet" href="/s&a/css/cssPrincipal.css">
-    <link rel="stylesheet" href="/s&a/css/datatables.css" />
+    <link rel="stylesheet" href="/sya/css/cssPrincipal.css">
+    <link rel="stylesheet" href="/sya/css/datatables.css" />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap"
         rel="stylesheet">
 

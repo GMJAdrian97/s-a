@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>S&A</title>
-    <link rel="stylesheet" href="/s&a/css/cssPrincipal.css">
+    <link rel="stylesheet" href="/sya/css/cssPrincipal.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap"
         rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -26,7 +26,7 @@
     </div>
 
     <div class="section section-presentacion">
-        <img src="/s&a/imgs/img-bienvenidaTransparente.png" alt="">
+        <img src="/sya/imgs/img-bienvenidaTransparente.png" alt="">
     </div>
 
     <!-- --------------------------- Reloj de cuenta regresiva --------------------------- -->
@@ -55,9 +55,9 @@
                 nació como un sueño y hoy florece como nuestra vida juntos.</h2>
         </div>
         <!-- Card Ceremonia -->
-        <div class="col-4"><img src="/s&a/imgs/iconoIglesia.png" class="img-icons" alt=""></div>
+        <div class="col-4"><img src="/sya/imgs/iconoIglesia.png" class="img-icons" alt=""></div>
         <div class="card card-ceremonia" id="Ceremonia">
-            <img class="img-cards" src="/s&a/imgs/iglesia.png" alt="">
+            <img class="img-cards" src="/sya/imgs/iglesia.png" alt="">
             <p><strong>Hora:</strong> 01:00 PM. hrs</p>
             <p><strong>Lugar:</strong> Parroquia Santo Ecce Homo , Acámbaro, Gto</p>
             <a href="https://maps.app.goo.gl/v6Pvo7XnfDupnSSm6" target="_blank">
@@ -70,9 +70,9 @@
     <div class="section section-recepcion" id="Recepcion">
 
         <!-- Card Recepción -->
-        <div class="col-4"><img src="/s&a/imgs/iconRecepcion.png" class="img-icons" alt=""></div>
+        <div class="col-4"><img src="/sya/imgs/iconRecepcion.png" class="img-icons" alt=""></div>
         <div class="card card-ceremonia">
-            <img class="img-cards" src="/s&a/imgs/imgRancho1.png" alt="">
+            <img class="img-cards" src="/sya/imgs/imgRancho1.png" alt="">
             <p><strong>Hora:</strong> 03:00 PM. hrs</p>
             <p><strong>Lugar:</strong> Rancho Martinez, Acámbaro, Gto</p>
             <a href="https://maps.app.goo.gl/pRwgbNgvUrDiNzZ37" target="_blank">
@@ -84,8 +84,8 @@
                         atenderemos.</p><br />
                     <p>Se llevará un control de pases de entrada, por lo que será indispensable presentarlos completos al
                         ingresar.</p><br />
-                    <p> Con Cariño S&A. </p>" data-imagen="/s&a/imgs/iconRecepcion.png"><img class="img-interrogacion"
-                    src="/s&a/imgs/interrogacion.png" /></button>
+                    <p> Con Cariño S&A. </p>" data-imagen="/sya/imgs/iconRecepcion.png"><img class="img-interrogacion"
+                    src="/sya/imgs/interrogacion.png" /></button>
         </div>
     </div>
 
@@ -94,7 +94,7 @@
     <div class="section section-recepcion">
 
         <!-- Card Tinerario -->
-        <div class="col-4"><img src="/s&a/imgs/IconItinerario.png" class="img-icons" alt=""></div>
+        <div class="col-4"><img src="/sya/imgs/IconItinerario.png" class="img-icons" alt=""></div>
         <div class="card card-ceremonia" id="Ceremonia">
             <!-- Contenedor de la línea de tiempo -->
             <div class="sa-timeline">
@@ -119,7 +119,7 @@
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
-                                <img src="/s&a/imgs/IglesiaIcon.png" class="img-icons" alt="">
+                                <img src="/sya/imgs/IglesiaIcon.png" class="img-icons" alt="">
                             </div>
                         </li>
 
@@ -133,12 +133,12 @@
                         atenderemos.</p><br />
                     <p>Se llevará un control de pases de entrada, por lo que será indispensable presentarlos completos al
                         ingresar.</p><br />
-                    <p> Con Cariño S&A. </p>" data-imagen="/s&a/imgs/iconRecepcion.png"><img class="img-interrogacion"
-                                        src="/s&a/imgs/interrogacion.png" /></button>
+                    <p> Con Cariño S&A. </p>" data-imagen="/sya/imgs/iconRecepcion.png"><img class="img-interrogacion"
+                                        src="/sya/imgs/interrogacion.png" /></button>
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
-                                <img src="/s&a/imgs/RecepcionIcon.png" class="img-icons" alt="">
+                                <img src="/sya/imgs/RecepcionIcon.png" class="img-icons" alt="">
                                 <!-- <i class="fa-solid fa-circle-info"></i> -->
                             </div>
                         </li>
@@ -152,12 +152,12 @@
                                     durante dos horas, finalizando a las 5:30 p.m. Queremos que todos nuestros invitados
                                     disfruten de este momento tan especial y que nadie se quede sin compartir el
                                     banquete con nosotros.</p><br />
-                                <p> Con Cariño S&A. </p>" data-imagen="/s&a/imgs/IconComida.png"><img
-                                        class="img-interrogacion" src="/s&a/imgs/interrogacion.png" /></button>
+                                <p> Con Cariño S&A. </p>" data-imagen="/sya/imgs/IconComida.png"><img
+                                        class="img-interrogacion" src="/sya/imgs/interrogacion.png" /></button>
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
-                                <img src="/s&a/imgs/ComidaIcon.png" class="img-icons" alt="">
+                                <img src="/sya/imgs/ComidaIcon.png" class="img-icons" alt="">
                             </div>
                         </li>
                         <!--  Item 4 -->
@@ -167,7 +167,7 @@
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
-                                <img src="/s&a/imgs/ProtocoloIcon.png" class="img-icons" alt="">
+                                <img src="/sya/imgs/ProtocoloIcon.png" class="img-icons" alt="">
                             </div>
                         </li>
                         <!--  Item 5 -->
@@ -177,7 +177,7 @@
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
-                                <img src="/s&a/imgs/FiestaIcon.png" class="img-icons" alt="">
+                                <img src="/sya/imgs/FiestaIcon.png" class="img-icons" alt="">
                             </div>
                         </li>
                         <li>
@@ -188,7 +188,7 @@
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
-                                <img src="/s&a/imgs/FinFiestaIcon.png" class="img-icons" alt="">
+                                <img src="/sya/imgs/FinFiestaIcon.png" class="img-icons" alt="">
                             </div>
                         </li>
 
@@ -205,14 +205,14 @@
     <div class="section section-hospedaje" id="Hoteles">
 
         <!-- Card Recepción -->
-        <div class="col-4"><img src="/s&a/imgs/IconHostedaje.png" class="img-icons" alt=""></div>
+        <div class="col-4"><img src="/sya/imgs/IconHostedaje.png" class="img-icons" alt=""></div>
         <div class="card card-ceremonia" id="Ceremonia">
             <img class="img-cards" src="" alt="">
             <p><strong>¡Quedate!:</strong></p>
             <p>Queremos que disfrutes de nuestra boda sin preocupaciones, nos encantaría que
                 te quedaras disfrutar de la fiesta e principio a fin, por eso te compartimos algunas opciones de
                 alojamiento cercanas.</p>
-            <a href="/s&a/alojamiento.php">
+            <a href="/sya/alojamiento.php">
                 <!-- target="_blank" -->
                 <button class="btn btn--block card__btn">Alojamiento</button>
             </a>
@@ -223,7 +223,7 @@
     <div class="section section-asistencia" id="asistencia">
 
         <!-- Card Recepción -->
-        <div class="col-4"><img src="/s&a/imgs/IconAsistencia.png" class="img-icons" alt=""></div>
+        <div class="col-4"><img src="/sya/imgs/IconAsistencia.png" class="img-icons" alt=""></div>
         <div class="card card-ceremonia" id="asistencia">
             <img class="img-cards" src="" alt="">
             <p><strong>Confirma tu asistencia:</strong></p>
@@ -239,7 +239,7 @@
 
             <div class="section section-ceremonia">
                 <!-- Card  -->
-                <form method="POST" action="/s&a/panel/invitados/ctrlInvitados.php?accion=BuscarInvitacion">
+                <form method="POST" action="/sya/panel/invitados/ctrlInvitados.php?accion=BuscarInvitacion">
                     <div class="user-box">
                         <input class="LabelCodigoInvitacion" type="text" id="codigo" name="codigo" value="" required><br /><br />
                         <label>Introduce tu Codigo de invitacion</label>
@@ -253,7 +253,7 @@
             </div>
         </div><br /><br />
 
-        <script src="/s&a/js/relojRegresivo.js"></script>
+        <script src="/sya/js/relojRegresivo.js"></script>
         <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script> -->

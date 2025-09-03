@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>S&A</title>
-    <link rel="stylesheet" href="/s&a/css/cssPrincipal.css">
+    <link rel="stylesheet" href="/sya/css/cssPrincipal.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap"
         rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -52,7 +52,7 @@
     <div class="section section-asistencia" id="asistencia">
 
         <!-- Card Contactanos -->
-        <div class="col-4"><img src="/s&a/imgs/IconContacto.png" class="img-icons" alt=""></div>
+        <div class="col-4"><img src="/sya/imgs/IconContacto.png" class="img-icons" alt=""></div>
         <div class="card card-ceremonia" id="asistencia">
             <img class="img-cards" src="" alt="">
             <p><strong>Contactanos</strong></p>
@@ -81,9 +81,9 @@
     <!-- Seccion Contacto -->
     <div class="section section-asistencia" id="asistencia">
         <!-- Card Mesa rtegalos -->
-        <div class="col-4"><img src="/s&a/imgs/IconExtras.png" class="img-icons" alt=""></div>
+        <div class="col-4"><img src="/sya/imgs/IconExtras.png" class="img-icons" alt=""></div>
         <div class="card card-ceremonia" id="asistencia">
-            <div class="col-4"><img src="/s&a/imgs/IconSobresMoney.png" class="img-icons" alt=""></div>
+            <div class="col-4"><img src="/sya/imgs/IconSobresMoney.png" class="img-icons" alt=""></div>
             <p><strong>Tu presencia es nuestro mejor regalo</strong></p>
             <p>No es necesario traer obsequios, pero si deseas honrarnos con un detalle, tendremos disponible la
                 dinámica de sobres de dinero y también una mesa de regalos en Mercado Libre, o si lo prefieres, podrás
@@ -99,7 +99,7 @@
         </div><br /><br />
         <!-- Card Mesa rtegalos -->
         <div class="card card-ceremonia" id="asistencia">
-            <div class="col-4"><img src="/s&a/imgs/IconNinos.png" class="img-icons" alt=""></div>
+            <div class="col-4"><img src="/sya/imgs/IconNinos.png" class="img-icons" alt=""></div>
             <p>Queremos que los más pequeños también disfruten al máximo este día tan especial. Para ellos tendremos un
                 espacio pensado con cariño, con inflables, actividades tipo feria, bajo el cuidado de niñeras que estará
                 al pendiente
@@ -110,16 +110,16 @@
             <button class="btn btn--block card__btn sa-open-modal" data-texto="<p>El servicio de niñeras estará disponible de 4:00 p.m. a 8:00 p.m., aunque la zona infantil permanecerá abierta en todo momento.<br /><br />
                                 Los niños contarán con un menú especial de pizza y jugo en su propio espacio infantil. Por esta razón, no tendrán lugar en las mesas de adultos, ya que su área está diseñada especialmente
                                 para que disfruten de forma cómoda, divertida y con toda la atención que merecen.</p><br />
-                                <p> Con Cariño S&A. </p>" data-imagen="/s&a/imgs/IconNinos.png"><img
-                    class="img-interrogacion" src="/s&a/imgs/interrogacion.png" /></button>
+                                <p> Con Cariño S&A. </p>" data-imagen="/sya/imgs/IconNinos.png"><img
+                    class="img-interrogacion" src="/sya/imgs/interrogacion.png" /></button>
             </a><br /><br />
 
             <!-- Nombre familia: SOLO letras -->
         </div><br /><br />
         <!-- Card La fidela -->
         <div class="card card-ceremonia" id="asistencia">
-            <div class="col-4"><img src="/s&a/imgs/IconMusicaVivo.png" class="img-icons" alt=""></div>
-            <div class="col-4"><img src="/s&a/imgs/lafidela.jpg" class="imglogosbandas" alt=""></div>
+            <div class="col-4"><img src="/sya/imgs/IconMusicaVivo.png" class="img-icons" alt=""></div>
+            <div class="col-4"><img src="/sya/imgs/lafidela.jpg" class="imglogosbandas" alt=""></div>
             <p><strong>La Fidela</strong></p>
             <p>¡Prepárense para cantar y disfrutar al máximo con La Fidela, una banda
                 originaria de Acámbaro, Guanajuato, que nos hará vibrar con los mejores covers del rock alternativo
@@ -133,7 +133,7 @@
             </a><br /><br />
 
             <!-- banda los de hidalgo-->
-            <div class="col-4"><img src="/s&a/imgs/bandahidalgo.jpg" class="imglogosbandas" alt=""></div>
+            <div class="col-4"><img src="/sya/imgs/bandahidalgo.jpg" class="imglogosbandas" alt=""></div>
             <p><strong>Mi Banda los de Hidalgo</strong></p>
             <p>¡Prepárense para bailar sin parar! Mi Banda Los de Hidalgo son un tributo
                 a La Banda el Mexicano y sus grandes éxitos como Ramito de Violetas, No Bailes de Caballito y Mambo
@@ -145,7 +145,7 @@
                 style="text-decoration:none;">
                 <button class="btn-Face">Facebook</button>
             </a><br /><br />
-            <div class="col-4"><img src="/s&a/imgs/lidernorte.jpg" class="imglogosbandas" alt=""></div>
+            <div class="col-4"><img src="/sya/imgs/lidernorte.jpg" class="imglogosbandas" alt=""></div>
             <p><strong>Lider Norte</strong></p>
             <p>Con todo el sabor norteño! Con ustedes, Líder Norte, una banda
                 originaria de Acámbaro, Guanajuato, que pondrá a todos a
@@ -166,7 +166,7 @@
     <div class="section section-recepcion">
 
         <!-- Card Tinerario -->
-        <div class="col-4"><img src="/s&a/imgs/IconItinerario.png" class="img-icons" alt=""></div>
+        <div class="col-4"><img src="/sya/imgs/IconItinerario.png" class="img-icons" alt=""></div>
         <div class="card card-ceremonia" id="Ceremonia">
             <!-- Contenedor de la línea de tiempo -->
             <div class="sa-timeline">
@@ -191,7 +191,7 @@
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
-                                <img src="/s&a/imgs/IglesiaIcon.png" class="img-icons" alt="">
+                                <img src="/sya/imgs/IglesiaIcon.png" class="img-icons" alt="">
                             </div>
                         </li>
 
@@ -205,12 +205,12 @@
                         atenderemos.</p><br />
                     <p>Se llevará un control de pases de entrada, por lo que será indispensable presentarlos completos al
                         ingresar.</p><br />
-                    <p> Con Cariño S&A. </p>" data-imagen="/s&a/imgs/iconRecepcion.png"><img class="img-interrogacion"
-                                        src="/s&a/imgs/interrogacion.png" /></button>
+                    <p> Con Cariño S&A. </p>" data-imagen="/sya/imgs/iconRecepcion.png"><img class="img-interrogacion"
+                                        src="/sya/imgs/interrogacion.png" /></button>
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
-                                <img src="/s&a/imgs/RecepcionIcon.png" class="img-icons" alt="">
+                                <img src="/sya/imgs/RecepcionIcon.png" class="img-icons" alt="">
                                 <!-- <i class="fa-solid fa-circle-info"></i> -->
                             </div>
                         </li>
@@ -224,12 +224,12 @@
                                     durante dos horas, finalizando a las 5:30 p.m. Queremos que todos nuestros invitados
                                     disfruten de este momento tan especial y que nadie se quede sin compartir el
                                     banquete con nosotros.</p><br />
-                                <p> Con Cariño S&A. </p>" data-imagen="/s&a/imgs/IconComida.png"><img
-                                        class="img-interrogacion" src="/s&a/imgs/interrogacion.png" /></button>
+                                <p> Con Cariño S&A. </p>" data-imagen="/sya/imgs/IconComida.png"><img
+                                        class="img-interrogacion" src="/sya/imgs/interrogacion.png" /></button>
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
-                                <img src="/s&a/imgs/ComidaIcon.png" class="img-icons" alt="">
+                                <img src="/sya/imgs/ComidaIcon.png" class="img-icons" alt="">
                             </div>
                         </li>
                         <!--  Item 4 -->
@@ -239,7 +239,7 @@
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
-                                <img src="/s&a/imgs/ProtocoloIcon.png" class="img-icons" alt="">
+                                <img src="/sya/imgs/ProtocoloIcon.png" class="img-icons" alt="">
                             </div>
                         </li>
                         <!--  Item 5 -->
@@ -249,7 +249,7 @@
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
-                                <img src="/s&a/imgs/FiestaIcon.png" class="img-icons" alt="">
+                                <img src="/sya/imgs/FiestaIcon.png" class="img-icons" alt="">
                             </div>
                         </li>
                         <li>
@@ -260,7 +260,7 @@
                             </p><br /><br />
                             <!-- Icono -->
                             <div class="icon-holder">
-                                <img src="/s&a/imgs/FinFiestaIcon.png" class="img-icons" alt="">
+                                <img src="/sya/imgs/FinFiestaIcon.png" class="img-icons" alt="">
                             </div>
                         </li>
 
@@ -274,11 +274,11 @@
     </div>
 
     <div class="section section-presentacion">
-        <img src="/s&a/imgs/imagenagradecimiento.png" alt="">
+        <img src="/sya/imgs/imagenagradecimiento.png" alt="">
     </div>
 
 
-    <script src="/s&a/js/relojRegresivo.js"></script>
+    <script src="/sya/js/relojRegresivo.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script> -->
@@ -376,6 +376,14 @@
                 modal.style.display = "none";
             }
         });
+    });
+    </script>
+
+     <!-- Scrip que hace que al dar para atras en el navegador recahra la pagina principal y no la de validacion  -->
+    <script>
+    window.addEventListener("popstate", function(event) {
+        // Redirigir a otra página si intentan regresar
+        window.location.href = "/sya/invitacion.php";
     });
     </script>
 

@@ -19,13 +19,37 @@
                 $datosInvitadoConfirmado = $invitados->read();
             require_once('vistaInvitadosConfirmados.php');
             }else{
-                print_r("no va ir a la boda");
-                die();
+                $resultado=$invitados->updateConfirmacion($asistencia,$codigo);
+                $datosInvitadoConfirmado = $invitados->read();
+                require_once('vistaInvitadosNoIran.php');;
             }       
-             break;
+        break;
 
 
         case 'BuscarInvitacion':
+            $codigo = $_POST['codigo'];
+            $datosInvitadosReadOne = $invitados->readOne($codigo);
+            if(isset($datosInvitadosReadOne)){
+                if($datosInvitadosReadOne['asistencia'] == "Si"){
+                    require_once('vistaInvitadosConfirmados.php');
+                } else{
+                        if($datosInvitadosReadOne['asistencia'] == "No"){
+                            require_once('vistaInvitadosNoIran.php');
+                        } else{
+                            if($datosInvitadosReadOne['asistencia'] == "pendiente"){
+                                print_r($datosInvitadosReadOne);
+                                require_once('vistaInvitados.php');
+                            } else{
+                                echo "Nada...";
+                            }
+                        }
+                    }
+            }else{
+                echo "Invitacion no encontrada...";
+            }
+        break;
+
+        /* case 'BuscarInvitacion':
             $codigo = $_POST['codigo'];
             $datosInvitadosReadOne = $invitados->readOne($codigo);
             if(isset($datosInvitadosReadOne)){
@@ -42,23 +66,13 @@
                 } else {
                 echo 'nada';
             }
-             break;
-
-    /* case 'BuscarInvitacion':
-            $codigo = $_POST['codigo'];
-            $datosInvitadosReadOne = $invitados->readOne($codigo);
-            if(isset($datosInvitadosReadOne)){
-                require_once('vistaInvitados.php');
-                } else {
-                echo 'nada';
-            }
-             break; */
+        break; */
         
          //////////////////////////////////////// Caso read One ////////////////////////////////////////
      case 'readOne':
             $datosInvitadosReadOne = $invitados->readOne($codigo);
             if(isset($datosInvitadosReadOne['codigo'])){
-                echo '<img src="/s&a/imgs/IconAsistencia.png" class="img-icons" alt="">';
+                echo '<img src="/sya/imgs/IconAsistencia.png" class="img-icons" alt="">';
                 echo "<strong>Codigo: </strong>".$datosInvitadosReadOne['codigo']."<br />
                       <strong>Familia: </strong>".$datosInvitadosReadOne['nombre_familia']."<br />
                       <strong>Pases: </strong>".$datosInvitadosReadOne['pases']."<br />

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>S&A</title>
-    <link rel="stylesheet" href="/s&a/css/cssPrincipal.css">
+    <link rel="stylesheet" href="/sya/css/cssPrincipal.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap"
         rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -30,7 +30,7 @@
     <div class="section section-asistencia" id="asistencia">
 
         <!-- Card Recepción -->
-        <div class="col-4"><img src="/s&a/imgs/IconAsistencia.png" class="img-icons" alt=""></div>
+        <div class="col-4"><img src="/sya/imgs/IconAsistencia.png" class="img-icons" alt=""></div>
         <div class="card card-ceremonia" id="asistencia">
             <img class="img-cards" src="" alt="">
             <p><strong>Hola <?php echo $datosInvitadosReadOne['nombre_familia']?></strong></p>
@@ -77,7 +77,7 @@
 
 
 
-        <script src="/s&a/js/relojRegresivo.js"></script>
+        <script src="/sya/js/relojRegresivo.js"></script>
         <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script> -->

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>S&A</title>
-    <link rel="stylesheet" href="/s&a/css/cssPrincipal.css">
+    <link rel="stylesheet" href="/sya/css/cssPrincipal.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap"
         rel="stylesheet">
 
@@ -25,9 +25,9 @@
     <!-- Alojamiento A -->
     <div class="section section-ceremonia">
         <!-- Card Ceremonia -->
-        <div class="col-4"><img src="/s&a/imgs/IconHospedaje.png" class="img-icons" alt=""></div>
+        <div class="col-4"><img src="/sya/imgs/IconHospedaje.png" class="img-icons" alt=""></div>
         <div class="card card-ceremonia" id="Ceremonia">
-            <img class="img-cards" src="/s&a/imgs/HotelPosadaVirreydeMendoza.png" alt="">
+            <img class="img-cards" src="/sya/imgs/HotelPosadaVirreydeMendoza.png" alt="">
             <p><strong>Opcion A (Recomendada)</strong></p>
             <p><strong>Hotel Posada Virrey de Mendoza, <br /> Acámbaro, Gto</strong></p>
             <a href="https://share.google/BAfw6tasv7k7OOhnP" target="_blank">
@@ -40,8 +40,8 @@
                     cerca del templo donde se celebrará nuestra boda, este hotel es una opción ideal para disfrutar de
                     la fiesta sin prisas. Rodeado de comercios y espacios para pasear, ofrece estacionamiento y
                     restaurante, asegurando comodidad durante su estancia.</p><br />
-                <p> Con Cariño S&A. </p>" data-imagen="/s&a/imgs/IconHospedaje.png"><img class="img-interrogacion"
-                    src="/s&a/imgs/interrogacion.png" /></button>
+                <p> Con Cariño S&A. </p>" data-imagen="/sya/imgs/IconHospedaje.png"><img class="img-interrogacion"
+                    src="/sya/imgs/interrogacion.png" /></button>
         </div>
     </div>
 
@@ -49,7 +49,7 @@
     <div class="section section-ceremonia">
         <!-- Card Ceremonia -->
         <div class="card card-ceremonia" id="Ceremonia">
-            <img class="img-cards" src="/s&a/imgs/mesonpuente.jpg" alt="">
+            <img class="img-cards" src="/sya/imgs/mesonpuente.jpg" alt="">
             <p><strong>Opcion B</strong></p>
             <p><strong>Hotel Meson del puente, <br /> Acámbaro, Gto</strong></p>
             <a href="https://share.google/YORXkhFwhanEcTQsF" target="_blank">
@@ -61,8 +61,8 @@
                     completa y confortable. Cuenta con restaurante, bar, piscina, cancha de pádel y un amplio
                     estacionamiento, lo que lo convierte en una opción ideal para relajarse y disfrutar al máximo
                     antes y después de la boda.</p><br />
-                <p> Con Cariño S&A. </p>" data-imagen="/s&a/imgs/IconHospedaje.png"><img class="img-interrogacion"
-                    src="/s&a/imgs/interrogacion.png" /></button>
+                <p> Con Cariño S&A. </p>" data-imagen="/sya/imgs/IconHospedaje.png"><img class="img-interrogacion"
+                    src="/sya/imgs/interrogacion.png" /></button>
         </div>
     </div>
 
@@ -70,7 +70,7 @@
     <div class="section section-ceremonia">
         <!-- Card Ceremonia -->
         <div class="card card-ceremonia" id="Ceremonia">
-            <img class="img-cards" src="/s&a/imgs/Kali.png" alt="">
+            <img class="img-cards" src="/sya/imgs/Kali.png" alt="">
             <p><strong>Opcion C</strong></p>
             <p><strong>Kali Doña Tere Hotel Boutique<br /> Acámbaro, Gto</strong></p>
             <a href="https://share.google/JDnmPJuTZvSHeYtNe" target="_blank">
@@ -82,17 +82,17 @@
                     donde se celebrará nuestra boda. Aunque su ubicación no es tan vistosa como la primera
                     opción, ofrece la misma comodidad y servicios: restaurante, estacionamiento y cercanía a
                     comercios para disfrutar su estancia con tranquilidad.</p><br />
-                <p> Con Cariño S&A. </p>" data-imagen="/s&a/imgs/IconHospedaje.png"><img class="img-interrogacion"
-                    src="/s&a/imgs/interrogacion.png" /></button>
+                <p> Con Cariño S&A. </p>" data-imagen="/sya/imgs/IconHospedaje.png"><img class="img-interrogacion"
+                    src="/sya/imgs/interrogacion.png" /></button>
         </div>
     </div>
     <div class="card card-ceremonia" id="btnAlo">
-        <a href="/s&a/invitacion.php#Hoteles">
+        <a href="/sya/invitacion.php#Hoteles">
             <button class="btn btn--block card__btn">Regresar</button>
         </a>
     </div>
 
-    <script src="/s&a/js/nav.js"></script>
+    <script src="/sya/js/nav.js"></script>
     <!-- Script para los mensajes modales -->
     <script>
     document.addEventListener("DOMContentLoaded", () => {
